@@ -21,3 +21,10 @@ cd 01
 gcc 04_ls.c ../apue.c
 ./a.out .
 ```
+
+#### 文档
+
+
+
+[官方文档 man](https://man7.org/linux/man-pages/dir_section_2.html)
+
