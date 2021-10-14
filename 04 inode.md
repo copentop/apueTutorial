@@ -76,6 +76,8 @@ GPT是UEFI规范的一部分，该规范正在替代旧的BIOS。
 
 第一个扇区之后，将存储GPT数据结构，包括 GPT标头 和 分区表条目。作为备份，GPT条目和GPT标头也会存储在存储设备的最后，这样即便主副本被损坏，也可以将其恢复。此备份被称为 辅助GPT。
 
+![image](https://github.com/copentop/image-p/blob/master/aupe/gpt_20211011205659.png?raw=true)
+
 在GPT中，所有的引导服务（引导加载程序，引导管理器，预操作系统环境和壳层）都位于名为EFI系统分区（简称ESP）的特殊分区中，UEFI固件可以使用该分区。ESP甚至拥有自己专属的文件系统，该系统是 FAT的一个特定版本。在Linux上，ESP存储在 `/sys/firmware/efi` 路径下。
 
 如果你在自己的系统上找不到此路径，那你的固件可能是基于BIOS的固件。
